@@ -51,13 +51,26 @@
             <!-- home page -->
             <div class="home max-w-[1120px] hidden m-auto py-4  page activePage" data-page="1">
                 <!-- swiper -->
-                <div class="swiper mySwiper h-full w-full">
-                    <div class="swiper-wrapper" id="swiper-wrapper">
+                <div class="swiper mySwiper h-full w-full rounded-2xl">
+                    <div class="swiper-wrapper rounded-2xl" id="swiper-wrapper">
                         <!-- swiper slide  -->
+
+                        <div class="swiper-slide flex items-center justify-center text-xl rounded-2xl">
+                            <img class="w-full h-[500px] object-cover rounded-2xl" src="${swiper.Image}"
+                                alt="swiper-img">
+                        </div>
                     </div>
                     <!-- Navigation buttons -->
                     <div class="swiper-button-next text-white"></div>
                     <div class="swiper-button-prev text-white"></div>
+                </div>
+
+                <!-- popular -->
+                <div class="w-full py-3">
+                    <p class="text-[24px] text-gray-600">popular</p>
+                    <div class="grid grid-cols-5 gap-5 py-3" id="popular">
+                        <!-- popular cart -->
+                    </div>
                 </div>
             </div>
 
