@@ -24,7 +24,7 @@
         <div class="pages">
             <!-- hearder -->
             <header class="w-full bg-gray-200">
-                <nav class="max-w-[1120px] m-auto flex items-center justify-between cursor-pointer py-3">
+                <nav class="max-w-[1150px] m-auto flex items-center justify-between cursor-pointer py-3">
                     <div class="flex items-center justify-center gap-1">
                         <img class="w-[50px] h-[50px] rounded-pull" src="./images/logo.png" alt="">
                         <p class="font-bold text-[24px] text-red-500">Drosell</p>
@@ -34,7 +34,7 @@
                             data-tab="1">home</li>
                         <li class="text-[18px] text-gray-600 cursor-pointer nav__item " data-switcher data-tab="2">shop
                         </li>
-                        <li class="text-[18px] text-gray-600 cursor-pointer nav__item " data-switcher data-tab="3">login
+                        <li class="text-[18px] text-gray-600 cursor-pointer nav__item " href="./login/login.html" data-switcher data-tab="3">login
                         </li>
                     </ul>
                     <div class="flex items-center justify-center gap-5">
@@ -55,10 +55,6 @@
                     <div class="swiper-wrapper rounded-2xl" id="swiper-wrapper">
                         <!-- swiper slide  -->
 
-                        <div class="swiper-slide flex items-center justify-center text-xl rounded-2xl">
-                            <img class="w-full h-[500px] object-cover rounded-2xl" src="${swiper.Image}"
-                                alt="swiper-img">
-                        </div>
                     </div>
                     <!-- Navigation buttons -->
                     <div class="swiper-button-next text-white"></div>
@@ -68,7 +64,7 @@
                 <!-- popular -->
                 <div class="w-full py-3">
                     <p class="text-[24px] text-gray-600">popular</p>
-                    <div class="grid grid-cols-5 gap-5 py-3" id="popular">
+                    <div class="grid grid-cols-5 gap-5 py-3" id="popular" >
                         <!-- popular cart -->
                     </div>
                 </div>
@@ -81,7 +77,8 @@
 
             <!-- login page -->
             <div class="login max-w-[1120px] hidden m-auto page" data-page="3">
-                <p>login</p>
+                <div></div>
+                <div></div>
             </div>
 
             <!-- sign up page -->
@@ -93,6 +90,7 @@
             <div class="shop max-w-[1120px] hidden m-auto page" data-page="5">
                 <p>cart</p>
             </div>
+
         </div>
     </div>
     <!-- Swiper JS -->

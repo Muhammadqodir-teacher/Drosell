@@ -26,14 +26,14 @@ function changePage(page_id) {
 
 
 // hero swiper fetch
-fetch("https://gist.githubusercontent.com/Muhammadqodir-teacher/0bde30d73f2b476edc8fb4d419399667/raw/932f918b1bc60ed89137ef154990f555f2f70491/Drosell-swipper-img")
+fetch("https://gist.githubusercontent.com/Muhammadqodir-teacher/0bde30d73f2b476edc8fb4d419399667/raw/b2cca56a982cf52cdade1249c43e23e47bd9cddb/Drosell-swipper-img")
     .then(res => res.json())
     .then(data => {
         const swiperDiv = document.getElementById("swiper-wrapper")
-        data.forEach(p => {
+        data.forEach(i => {
             swiperDiv.innerHTML += `
             <div class="swiper-slide flex items-center justify-center text-xl rounded-2xl">
-                <img class="w-full h-[500px] object-cover rounded-2xl" src="${p.image}" alt="swiper-img">
+                <img class="w-full h-[500px] object-cover rounded-2xl" src="${i.image}" alt="swiper-img">
             </div>
             `
         })
@@ -49,7 +49,7 @@ fetch("https://gist.githubusercontent.com/Muhammadqodir-teacher/54ca102ff661ae12
 
         data.forEach(p => {
             popularDiv.innerHTML += `
-        <div class="rounded-lg cursor-pointer flex flex-col gap-2 items-start justify-between">
+        <div class="rounded-lg cursor-pointer flex flex-col gap-2 items-start justify-between" >
             <div class="">
                 <img class="w-52 rounded-xl " src="${p.image}" alt="img">
             </div>
